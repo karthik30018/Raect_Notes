@@ -224,3 +224,110 @@ const handleUpClick=()=>{
       setText(newText);
       }
 ```
+
+# Day 2
+
+## How to change title dynamically
+
+- Open index.html and in title tag change the name how you required.
+- in last meta tag ,in content field specify the working of this web application in less words.
+- for icon download suitable item,open favicon generator and use the icon youu downloaded.
+- after generating favicon extract the zip folder and sselect any two png and one ico .
+- open public in your project folder and delete the ico which is already present and past this 3 icons.
+- Then refresh your browser it will appear.
+
+### To change title dynamically
+```
+document.title = "title name"
+```
+use this line when ever you want to trigger or change the name of the title(eg.use inside useState)
+
+- To make title change dynamically at perticular interval of time 
+ ```
+ setInterval(()=>{
+  document.title = "title name"
+ },2000)
+```
+use the above code more no of times with different time interval.
+
+## Router
+
+- install react-router-dom package
+  
+```
+ npm insatll react-router-dom
+  or 
+ npm i react-router-dom 
+
+```
+- import this whereever you use router
+```
+  import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link}from "react-router-dom";
+```
+
+ - in App.js wrap everything inside Router tag
+ - Create Routes tag and define every route inside Routes tag by using Route tag.Shown in fig given below
+ - **exact** can be used inside Route tag to perforn when it matches exactly.
+
+
+
+![alt text](./router_1.png)
+
+
+and also use this in the Navbar
+- change anchor tag into Link tag and href into to.Shown in fig given below
+
+
+![alt text](./router_2.png)
+
+
+## Git hub Deployment
+- Before deploying run the command **run build app**
+-  Upload the react project in github.
+- Open **deploy creat react app** website.
+- Navigate to Github pages
+- Copy the home page link
+```
+  "homepage": "https://myusername.github.io/my-app",
+``` 
+- change myusername to your username and my-app into your repository name.
+  
+![alt text](./Github_link.png)
+
+eg here is myusername - karthik30018
+           my-app     - TextUtils
+
+- then paste the above link in **package.json** in first line inside the flower bracket.
+
+![alt text](./homepagelink.png)
+
+
+- Run this command in terminal
+```
+npm install --save gh-pages
+```
+- In **package.json** inside scripts paste this two lines.
+```
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build",
+```
+eg.
+
+![alt text](./scripts.png)
+
+- Run this command in the terminal.
+```
+npm run deploy
+```
+
+- Now open your repository in github go to **settings**.
+- Go to pages in branch make it **gh-pages** 
+  
+![alt text](./branch.png)
+- Above the branch you can find the link where your project is hosted. 
+  
+![alt text](./hostlink.png)

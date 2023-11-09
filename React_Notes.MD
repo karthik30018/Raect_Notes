@@ -331,3 +331,10 @@ npm run deploy
 - Above the branch you can find the link where your project is hosted. 
   
 ![alt text](./hostlink.png)
+
+# Day 3
+
+## Class based componenets with project(NewsApp)
+
+- render() - is used to compile jsx into html and render the html on the screen.
+

@@ -338,3 +338,11 @@ npm run deploy
 
 - render() - is used to compile jsx into html and render the html on the screen.
 
+
+### JavaScript De-structuring
+
+It is the process of exteacting some attributes from the object.
+
+## To use API from end points
+
+use **Fetch API**  

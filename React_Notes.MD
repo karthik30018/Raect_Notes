@@ -346,3 +346,11 @@ It is the process of exteacting some attributes from the object.
 ## To use API from end points
 
 use **Fetch API**  
+
+# Day 4
+
+## React infinite scroller
+
+- install the package `npm i react-infinite-scroll-component`
+-  import the `react-infinite-scroll-component`
+-  copy the type of scroll you want with related function code and modify according to the needs.

@@ -354,3 +354,43 @@ use **Fetch API**
 - install the package `npm i react-infinite-scroll-component`
 -  import the `react-infinite-scroll-component`
 -  copy the type of scroll you want with related function code and modify according to the needs.
+
+# Day 5
+
+## React top loading bar
+
+- one react top loading bar website.
+- install the package by using `npm install --save react-top-loading-bar`.
+- import `import LoadingBar from 'react-top-loading-bar'` in the componenet where you want to use.
+- Copy the Loading bar tag.
+```
+<LoadingBar
+        color='#f11946'
+        progress={progress}
+        onLoaderFinished={() => setProgress(0)}
+      />
+```
+- modify the code according to your requirement.
+
+
+## Hiding API key
+
+- Send apiKey as a props 
+- create a file name called `.env.local` outside the src.(By default it will be present in `.gitignore`)
+- open the created file and create a variable and pass the key as string.
+- eg.
+
+![alt text](./hidingAPIKEY.png)
+
+- define the apiKey in class or function
+  
+![alt text](./HidingAPIKEY-defineprops.png)
+
+## React Hooks
+
+![alt text](./Hooks.png)
+
+### Commonly Used React Hooks
+
+![Alt text](./commonReactHooks.png)
+  
